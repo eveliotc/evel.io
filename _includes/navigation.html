@@ -1,0 +1,16 @@
+<div id="navigation" class="clearBottom">
+  <div class="transBg">
+    <div class="transBg">
+      <ul class="clearfix">
+        <li class="page_item{% if page.url == "/" %} current_page_item{% endif %}"><a href="{{ site.url }}" title="{{ site.home_title }}">{{ site.home_title }}</a></li>
+        <li class="page_item"><a href="https://github.com/{{ site.github_username }}" title="{{ site.github_username }} on GitHub">GitHub</a></li>
+        <li class="page_item"><a href="https://plus.google.com/+{{ site.googleplus_username }}" title="{{ site.author }} on Google+">Google+</a></li>
+        <li class="page_item"><a href="https://twitter.com/{{ site.twitter_username }}" title="{{ site.twitter_username }} on Twitter">Twitter</a></li>
+        <li class="page_item"><a href="https://github.com/lyft/scissors" title="Scissors on GitHub">Scissors</a></li>
+        <li class="page_item"><a href="https://github.com/telly/MrVector" title="Mr. Vector on GitHub">Mr. Vector</a></li>
+        <li class="page_item"><a href="https://github.com/telly/FloatingAction" title="FloatingAction on GitHub">FloatingAction</a></li>
+{% for my_page in site.pages %}{% if my_page.title %}        <li class="page_item{% if page.url == my_page.url %} current_page_item{% endif %}"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endif %}{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

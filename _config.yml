@@ -1,0 +1,28 @@
+# Build settings
+markdown: kramdown
+# Site settings
+url: "http://evel.io"
+title: evel.io | Evelio Tarazona Cáceres
+home_title: evel.io
+email: evelio@evel.io
+description: Evelio Tarazona Cáceres
+baseurl: ""
+permalink: :year/:month/:day/:title/
+paginate_path: /page/:num/
+twitter_username: eveliotc
+github_username: eveliotc
+googleplus_username: EvelioTarazonaCaceres
+theme_color: "#4caf50"
+publisher_link: "https://plus.google.com/103638111379552295023"
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Evelio Tarazona Cáceres"
+      author_gravatar_url: "https://www.gravatar.com/avatar/d4f909e9619c6295cc268fe7ae3a2255"
+      author_short_description: "Software Engineer with a deep passion about anything Android, open source and beautiful pixel crafting. Currently working at Lyft, Colombian, eager for knowledge, "
+      author_link: "https://plus.google.com/103638111379552295023"
+      author_about_url: "/about/"
+      keywords: "android, androiddev, blog, evelio, tarazona, cáceres"

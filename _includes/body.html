@@ -1,0 +1,9 @@
+<div class="post clearBottom transBg" itemscope itemtype="http://schema.org/BlogPosting">
+<h1 class="postTitle" itemprop="name headline"><a href="{{ include.p.url }}" title="{{ include.p.title }}">{{ include.p.title }}</a></h1>
+<div class="postBody transBg" itemprop="articleBody"> 
+{% if content %} {{ content }} {% else %} {{ include.p.content }}{% endif %}
+</div>
+<p class="postInfo"></p>
+<p class="date">{% if include.p.date %}<time datetime="{{ include.p.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.p.date | date: "%B %-d, %Y" | upcase }}</time>{% else %}&nbsp;{% endif %}</p>
+{% if include.bio %} {% include author.html %} {% endif %}
+</div>

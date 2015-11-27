@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=0,width=device-width">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="{{ page.author }}">
+  <meta name="description"  itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="theme-color" content="{{ site.theme_color }}">
+  <meta name="keywords" itemprop="keywords" content="{{ site.keywords }}, {{ page.keywords }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="shortcut icon" type="image/png" href="{{ "/assets/favicon.png" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" type="image/png" sizes="192x192" href="{{ "/assets/favicon.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" type="image/png" href="{{ "/assets/favicon.png" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/static/reset.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/static/style.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="author" href="{{ page.author_link }}">
+  <link rel="publisher" href="{{ site.publisher_link }}">
+</head>

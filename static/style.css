@@ -1,0 +1,433 @@
+/*
+  Theme Name: evelio.theme
+  Version: 0.3
+  Author: Evelio Tarazona
+  Author URI: http://evel.io/
+*/
+
+* {
+  background-color: transparent;
+}
+
+body {
+  background: #e1e1e1;
+  color: #555;
+  font: 18px normal 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+a {
+  color:#2196f3;
+  text-decoration:none;
+}
+
+a:visited {
+  color:#7c4dff;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Condensed';
+  color:#444;
+  padding:24px 0px 8px 0px;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:24px;
+}
+
+h2 {
+  font-size:22px;
+}
+
+h3 {
+  font-size:20px;
+}
+
+h4 {
+  font-size:18px;
+}
+
+h5 {
+  font-size:16px;
+}
+
+ol {
+  list-style: decimal;
+  padding: 10px 0px 10px 25px;
+}
+
+ul {
+  list-style: circle;
+  padding: 10px 0px 10px 25px;
+}
+
+strong {
+  font-weight:bold;
+}
+
+em {
+  font-style:italic;
+}
+
+pre, code {
+  font-family:monospace;
+}
+
+input, button, textarea {
+  border: 1px solid #aaa;
+  background-color:#ddd;
+  padding:5px;
+  margin:5px;
+}
+
+input[type='submit'], input[type='button'] {
+  border: 1px double #aaa;
+}
+
+input:hover, input:active, input:focus, button:hover, button:active, button:focus, textarea:hover, textarea:active, textarea:focus {
+  border-color: #555;
+}
+
+hr {
+  border: 1px #dadada solid;
+  margin:5px;
+}
+
+.center {
+  text-align:center;
+}
+
+.aligncenter, #countdownimage {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.alignleft {
+  float:left;
+  display:inline;
+  padding-right:5px;
+}
+
+.clearBottom {
+  margin-bottom:20px;
+}
+
+.clearTop {
+  margin-top:20px;
+}
+
+.clearTopBottom {
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+blockquote {
+  background:url( static/quote.png) no-repeat top left;
+  padding-left:24px;
+}
+
+blockquote p {
+  font-family:'Georgia';
+  font-style:italic;
+  font-size:15px;
+  text-align:justify;
+  color:#666;
+}
+
+blockquote div.normal p { font-style:normal; }
+
+.transBg {
+  background: rgba(255,255,255,0.4);
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.transBg .transBg {
+  border-radius: 0px;
+}
+
+#title {
+  width:200px;
+  height:216px;
+  margin:0 35px;
+}
+
+#logo {
+  width:200px;
+  height:55px;
+}
+
+#title img {
+  margin-bottom:10px;
+}
+
+#moreInfo {
+  width:300px;
+  height:290px;
+  float:right;
+}
+
+.headerWidget {
+  width:300px;
+  float:left;
+}
+
+#navigation div.transBg div.transBg {
+  padding:0px;
+}
+
+#navigation ul, #navigation a, #navigation li {
+  display:block;
+}
+
+#navigation li
+{
+  float:left;
+}
+
+#navigation li.current_page_item {
+  background: rgba(255,255,255,0.8);
+}
+
+#navigation li:hover {
+  background: rgba(255,255,255,0.8);
+}
+
+#navigation a {
+  padding:10px;
+  text-decoration:none;
+  font-family: 'Roboto Condensed';
+  font-size:16px;
+  font-weight:bold;
+  color:#777;
+}
+
+#navigation a:hover {
+  color:#444;
+}
+
+
+#header, #content, #navigation, #footer {
+  float: left;
+  clear: left;
+  width:100%;
+}
+
+#wrapper {
+  margin: auto;
+  width: 96%;	
+  max-width: 920px;
+  padding: 2%;
+}
+
+div.postHead abbr.date, div.postHead h2.postTitle, div.postHead p.postComments, div.postHead h2.postTitle a {
+  float:left;
+  display:block;
+}
+
+h1.postTitle, h1.postTitle a {
+  color:#4caf50;
+  width:100%;
+  text-align:center;
+  padding: 5px 5px 15px 5px;
+}
+
+p.postComments {
+  width:50px;
+  height:60px;
+  text-align:center;
+}
+
+p.postComments a.commentCount, p.postComments a.addComment {
+  display:block;
+  width:50px;
+  font-family: 'Roboto Condensed';
+  font-size:18px;
+  font-weight:bold;
+  color:#00aab1;
+  background: url( static/comments.png) no-repeat top center;
+}
+
+p.postComments a.commentCount {
+  height:28px;padding-top:5px;
+}
+
+p.postComments a.addComment {
+  background-position:bottom center;
+  height:27px;
+}
+
+div.postBody p, p.postInfo {
+  padding:8px 0;
+  line-height: 125%;
+}
+
+.date {
+  padding:10px;
+  font-family: 'Roboto Condensed';
+  text-align:center;
+  font-size:16px;
+}
+
+#pagination {
+  margin:0 auto 20px auto;
+  height:44px;
+  width:104px;
+}
+
+#pagination span.previous, span.next, span.next a, span.previous a, span.separator
+{
+  width:44px;
+  height:44px;
+  display:block;
+  float:left;
+}
+
+span.next a, span.previous a {
+  background: url( static/arrowsLeftRight.png) no-repeat;
+}
+
+span.next a {
+  background-position: bottom right;
+}
+
+span.previous a {
+  background-position: bottom left;
+}
+
+#pagination span.separator {
+  width:16px;
+}
+
+#navigation ul, #sidebar, #sidebar ul, ol.commentList {
+  padding:0;
+  margin-left:0;
+}
+
+#sidebar, #sidebar ul {
+  list-style: none;
+}
+
+#recentcomments .recentcomments, #recent-posts li, ul.blogroll li, #statpress-topposts li {
+  padding:5px;
+  border-bottom: dashed 1px #444;
+  color: #666;
+}
+
+#comment {
+  width:480px;
+  height:250px;
+}
+
+.comment .commentAuthorAvatar {
+  float: left;
+  width:40px;
+}
+
+.comment .commentAuthorInfo {
+  margin-bottom:10px;
+}
+
+/* Example Template */
+
+body.example {
+  background-color: #eee;
+  background-image: none;
+  padding:20px;
+}
+
+span.lessFocus {
+  color: #aaa;
+  font-weight:normal;
+}
+
+body.example h1 {
+  font-size: 32px;
+}
+
+h2.example {
+  color:#aaa;
+  padding:21px;
+  font-size:18px;
+  height:18px;
+  font-weight:normal;
+  background-color: #555;
+}
+
+h2.example a {
+  color: #eee;
+  font-weight:bold;
+}
+
+div.exampleArrow {
+  background:url( static/bigArrowLeftRight.png) no-repeat;
+  height:60px;
+}
+
+div.exampleArrowLeft {
+  padding-left:25px;
+  background-position:left center;
+}
+
+div.exampleArrowRight {
+  padding-right:25px;
+  background-position:right center;
+}
+
+#content img, #content video, #content iframe, #content object, #content embed {
+  width: auto;
+  height: auto;	
+  max-width: 100%;
+}
+
+#content div.postBody {
+  overflow:auto;
+}
+
+.author-bio .avatar {
+  border-radius: 100%;
+  display: block;
+  float: left;
+  margin-top: -50px;
+  max-width: 100px !important;
+}
+
+.author-bio .author-description {
+  float: left;
+  display: block;
+  text-align: justify;
+  margin-top: -50px;
+  margin-left: 110px;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.author-bio .author-title {
+  font-weight: bold;
+}
+
+#___comments_0 {
+  margin-top: 8px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  min-height: 200px !important;
+  height: 100% !important;
+}
+
+div.share {
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+}
+
+div.share * {
+  height: 24px !important;
+  display: block !important;
+  margin-right: 8px !important;
+}
