@@ -56,6 +56,10 @@ h5 {
   font-size:16px;
 }
 
+p {
+  font-family: 'Roboto';
+}
+
 ol {
   list-style: decimal;
   padding: 10px 0px 10px 25px;
