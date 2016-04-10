@@ -4,7 +4,7 @@ markdown: kramdown
 url: "http://evel.io"
 title: evel.io | Evelio Tarazona Cáceres
 home_title: evel.io
-email: evelio@evel.io
+email: hello@evel.io
 description: Evelio Tarazona Cáceres
 baseurl: ""
 permalink: :year/:month/:day/:title/
