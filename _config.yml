@@ -1,5 +1,9 @@
 # Build settings
 markdown: kramdown
+gems:
+    - jekyll-redirect-from
+whitelist:
+    - jekyll-redirect-from
 # Site settings
 url: "http://evel.io"
 title: evel.io | Evelio Tarazona Cáceres
